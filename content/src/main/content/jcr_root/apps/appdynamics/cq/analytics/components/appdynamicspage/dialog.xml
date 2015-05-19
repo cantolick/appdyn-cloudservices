@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="nt:unstructured"
+            title="AppDynamics End User Monitoring Snippet"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <description
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    hideLabel="true"
+                    name="./snippetCode"
+                    text="End User Monitoring (EUM) must be enabled at the application level. Its UI is visible in the Controller GUI only if EUM is enabled. You can enable and then disable EUM if you decide not to use the feature."
+                    xtype="label"/>
+                <snippet
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Snippet JavaScript Code"
+                    name="./snippetCode"
+                    xtype="textarea"/>
+            </items>
+        </general>
+    </items>
+</jcr:root>
